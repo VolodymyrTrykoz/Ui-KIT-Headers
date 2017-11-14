@@ -1,0 +1,239 @@
+
+//Google fonts font-family: 'Cabin', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import 'icons/iconfont__variables';
+@import 'icons/iconfont__icons';
+@import 'base/normalize';
+
+
+
+ 
+
+// Base Style
+
+@import "base/_variables";
+@import "base/placeholders";
+
+
+
+
+
+html {
+  font-size: 62.5%;
+  font-family: $primary_font;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+ .container {
+   @extend %container; 
+ }
+
+
+ .dark {
+  color: $dark;
+      &-bg {
+        background: $dark;
+      }
+
+ }
+
+ .green {
+  color: $valid;
+      &--bg {
+        background: $valid;
+      }
+ }
+
+ .yellow {
+  color: $alarm;
+      &-bg {
+        background: $alarm;
+      }
+ }
+
+ .gray {
+  @extend %transition;
+  color: $gray-mid-col;
+    &--link:hover {
+      color: $blue;
+    }
+ }
+
+ .white {
+  color: #fff;
+      &--opacity05{
+        opacity: 0.5;
+      }
+ }
+
+.flex-just-center, %flex-just-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-just-end, %flex-just-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.flex-hor-vert-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+.flex-align-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+  }
+
+  a {text-decoration: none;}
+
+
+  
+  .borrad05, %borrad05 {
+  border-radius: 0.5rem;
+}
+
+
+
+  .flex-ai-c, %flex-ai-c {
+    display: flex;
+    align-items: center;
+  }
+
+  .flex-ai-c-just-betw {
+    @extend %flex-ai-c;
+    justify-content: space-between;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .flex-just-center {
+   display: flex;
+   justify-content: center;
+  }
+
+
+  .flex-betw {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+
+
+
+//---------------------------------------//
+
+  header {
+    margin-bottom: 5rem;
+  }
+
+
+  .mountain-bg {
+    background: url(../img/mountain.jpg);
+    background-position: 50% 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .box-indents {
+      padding-top: 8.2rem; 
+      padding-bottom: 9rem;
+  }
+  
+  .item__link {
+    font-size: $font-size-base;
+    font-weight: 600;
+    letter-spacing: 0.03rem;
+  
+  }
+
+
+
+  .list__item {
+    margin-right: 4rem;
+  }
+
+  .item__link, .btn, %linkbehabior {
+    @extend %transition;
+  }
+
+  .item__link--white,  {
+    color: #fff;
+        &:hover {
+          color: $blue;
+        }
+  }
+
+ .icon--menu {
+  font-size: 1.4rem;
+  color: #fff;
+  position: relative;
+  top:0.2rem;
+ }
+
+ .header__menu-but {
+  background: transparent;
+  border: 0;
+  outline: none;
+ }
+
+ .header__menu-but:hover .icon--menu{
+  @extend %linkbehabior;
+  color: $blue;
+ }
+
+ .heading {
+  font-size: 3.6rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.35;
+  margin-bottom: 0.5em;
+
+        &--top-shift {
+          padding-top: 20.7rem;
+        }
+
+        &--center {
+          text-align: center;
+          letter-spacing: 0.8px;
+        }
+
+ }
+
+ .header__menu {
+  @extend %linkbehabior;
+  font-size: 1.6rem;
+ }
+
+ .header__menu--right-shift {
+   margin-right: 0.5rem;
+ }
+
+ .text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding-left: 0.3rem;
+ }
+
+.logo-center-box {
+  padding: 5.6rem 0 1.5rem 1.4rem;
+}
+
